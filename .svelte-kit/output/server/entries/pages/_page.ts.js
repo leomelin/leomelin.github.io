@@ -1,6 +1,6 @@
 const load = async () => {
   return {
-    title: "Resume",
+    title: "Resume / CV",
     subtitles: ["Over 12 years in IT", "Bachelor of engineering"],
     introText: [
       "I specialize in cutting-edge web technologies, with a robust portfolio spanning startups to industry giants. My expertise lies in delivering functional software solutions, fueled by a passion for learning and innovation. Working collaboratively, I craft exceptional solutions that exceed expectations and drive business success.",
