@@ -700,6 +700,11 @@ export const load: PageLoad<ResumeModel> = async () => {
         description:
           "I've used it professionally in multiple projects. Not my main language but I can definitely use it when needed.",
       },
+      {
+        title: "Storybook",
+        level: 3,
+        description: "I've used it in a couple of projects as documentation for component library. It has not been my main focus."
+      }
     ],
   };
 };
