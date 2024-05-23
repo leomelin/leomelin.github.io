@@ -704,8 +704,9 @@ export const load = async () => {
       {
         title: "Storybook",
         level: 3,
-        description: "I've used it in a couple of projects as documentation for component library. It has not been my main focus."
-      }
+        description:
+          "I've used it in a couple of projects as documentation for component library. It has not been my main focus.",
+      },
     ],
   };
 };

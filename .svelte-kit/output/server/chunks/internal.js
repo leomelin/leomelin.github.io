@@ -123,13 +123,16 @@ const options = {
   service_worker: false,
   templates: {
     app: ({ head, body, assets: assets2, nonce, env }) => `<!doctype html>
-<html lang="en"  class="bg-center bg-fixed bg-cover">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Discover Leo Melin's extensive software development journey on his resume website. From cutting-edge projects to innovative solutions, explore his diverse experience and skills in the tech world.">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="bg-center bg-fixed bg-cover">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Discover Leo Melin's extensive software development journey on his resume website. From cutting-edge projects to innovative solutions, explore his diverse experience and skills in the tech world."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="icon" href="` + assets2 + '/favicon.png" />\n		<link rel="preconnect" href="https://fonts.googleapis.com">\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n		<link rel="preload" href="/background2.webp" as="image">\n		<link rel="preload" href="/portrait.webp" as="image">\n		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">\n		<title>Leo Melin: Software Developer Portfolio</title>\n\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+    <link rel="icon" href="` + assets2 + '/favicon.png" />\n    <link rel="preconnect" href="https://fonts.googleapis.com" />\n    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n    <link rel="preload" href="/background2.webp" as="image" />\n    <link rel="preload" href="/portrait.webp" as="image" />\n    <link\n      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"\n      rel="stylesheet"\n    />\n    <title>Leo Melin: Software Developer Portfolio</title>\n\n    ' + head + '\n  </head>\n  <body data-sveltekit-preload-data="hover">\n    <div style="display: contents">' + body + "</div>\n  </body>\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -201,7 +204,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1cy8od2"
+  version_hash: "zi6xzq"
 };
 async function get_hooks() {
   return {};
